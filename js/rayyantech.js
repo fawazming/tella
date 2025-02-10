@@ -12,12 +12,22 @@ async function fetchPosts(blogId) {
 function displayPPosts(posts) {
     const postList = document.getElementById('galwrap');
     posts.forEach(post => {
+        const imgRegex = /<img[^>]*src="([^">]+)"/;
+        const match = post.content.match(imgRegex);
+        let firstImageUrl = ''
+        if (match) {
+            firstImageUrl = match[1];
+        }
         const listItem = document.createElement('div');
         listItem.classList.add('col-lg-4', 'col-md-6', 'col-12', 'picture-item')
+        listItem.setAttribute('data-bs-target', 'p'+post.id);
+        listItem.setAttribute('data-bs-title', post.title);
+        listItem.setAttribute('data-bs-image', firstImageUrl);
+        listItem.setAttribute('data-bs-description', post.content);
         listItem.innerHTML = `
                     <div class="work-container position-relative d-block overflow-hidden rounded">
                         <div class="card-body p-0">
-                            <img src="images/portfolio/01.jpg" class="img-fluid" alt="work-image">
+                            <img src="${firstImageUrl}" class="img-fluid" alt="work-image">
                             
                             <div class="">
                                 <h5 class="mb-3" style="margin-left:5px"><a class="content-title" href="?postId=${post.id}">${post.title}</a></h5>
@@ -98,6 +108,41 @@ async function main() {
         console.log(posts)
         displayBPosts(posts);
     }
+
+    
+// Get all picture items
+const pictureItems = document.querySelectorAll('.picture-item');
+
+// Add event listener to each picture item
+pictureItems.forEach((item) => {
+    console.log(item);
+    item.addEventListener('click', () => {
+        // Get modal ID
+        const modalId = item.getAttribute('data-bs-target');
+
+        // Get modal title
+        const modalTitle = item.getAttribute('data-bs-title');
+
+        // Get modal image
+        const modalImage = item.getAttribute('data-bs-image');
+
+        // Get modal description
+        const modalDescription = item.getAttribute('data-bs-description');
+
+        // Get modal element
+        const modal = document.querySelector('#portfolio-modal');
+
+        // Set modal title
+        modal.querySelector('.modal-title').textContent = modalTitle;
+
+        // Set modal description
+        modal.querySelector('.modal-body p').innerHTML = modalDescription;
+
+        // Show modal
+        const modalInstance = new bootstrap.Modal(modal);
+        modalInstance.show();
+    });
+});
 }
 
 
