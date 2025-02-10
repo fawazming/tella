@@ -46,46 +46,34 @@ function displayPPosts(posts) {
 function displayBPosts(posts) {
     const postList = document.getElementById('blogwrap');
     posts.forEach(post => {
+        const imgRegex = /<img[^>]*src="([^">]+)"/;
+        const match = post.content.match(imgRegex);
+        let firstImageUrl = match?match[1]:'';
+
         const listItem = document.createElement('div');
         listItem.classList.add('col-xxl-4', 'col-xl-4', 'col-lg-4', 'col-md-4')
         listItem.innerHTML = `
+                    <a class="text-uppercase text-dark" href="blog/?postId=${post.id}">
                     <div class="blog-box">
                         <div class="blog-images">
-                            <img src="images/blog/blog-05.jpg" class="img-fluid rounded" alt="blog image">
+                            <img src="${firstImageUrl?firstImageUrl:'images/blog/13.jpg'}" class="img-fluid rounded" alt="blog image">
                         </div>
                         <div class="blog-content">
                             <h6 class="blog-title mt-4">
-                                <a href="#">${post.title}</a>
+                                <a href="blog/?postId=${post.id}">${post.title}</a>
                             </h6>
-
                             <div class="read-link mt-4">
-                                <a class="text-uppercase text-dark" href="?postId=${post.id}">Read More</a>
+                                <a class="text-uppercase text-dark" href="blog/?postId=${post.id}">Read More</a>
                             </div>
                         </div>
-                    </div>`;
+                    </div></a>`;
         postList.appendChild(listItem);
     });
 }
 
-// Function to fetch a single post
-async function fetchPost(blogId, postId) {
-    const response = await fetch(`https://www.googleapis.com/blogger/v3/blogs/${blogId}/posts/${postId}?key=${API_KEY}`);
-    const post = await response.json();
-    return post;
-}
-
-// Function to display a single post
-function displayPost(post) {
-    const postContainer = document.getElementById('post-container');
-    postContainer.innerHTML = `
-        <h1>${post.title}</h1>
-        <div>${post.content}</div>
-    `;
-}
 
 // Main function to handle the logic
 async function main() {
-    console.log("MAin fun called")
     const portfolioId = '3754457232408122297';
     const BlogId = '3642558814134041603';
     const urlParamsP = new URLSearchParams(window.location.search);
@@ -97,7 +85,6 @@ async function main() {
         const post = await fetchPost(portfolioId, singlePortfolioId);
         displayPost(post);
     } else {
-        console.log("MAin fun posts called")
         const posts = await fetchPosts(portfolioId);
         console.log(posts)
         displayPPosts(posts);
@@ -107,9 +94,7 @@ async function main() {
         const post = await fetchPost(BlogId, singleBlogId);
         displayPost(post);
     } else {
-        console.log("MAin fun blogs called")
         const posts = await fetchPosts(BlogId);
-        console.log(posts)
         displayBPosts(posts);
     }
 
