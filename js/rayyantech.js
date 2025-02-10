@@ -13,8 +13,12 @@ function displayPPosts(posts) {
     const postList = document.getElementById('galwrap');
     posts.forEach(post => {
         const imgRegex = /<img[^>]*src="([^">]+)"/;
+        const urlRegex = /<a[^>]*href="([^">]+)"/;
+
         const match = post.content.match(imgRegex);
-        let firstImageUrl = ''
+        const umatch = post.content.match(urlRegex);
+        let firstImageUrl = '';
+        let firstUrl = umatch?umatch[1]:'';
         if (match) {
             firstImageUrl = match[1];
         }
@@ -30,7 +34,7 @@ function displayPPosts(posts) {
                             <img src="${firstImageUrl}" class="img-fluid" alt="work-image">
                             
                             <div class="">
-                                <h5 class="mb-3" style="margin-left:5px"><a class="content-title" href="?postId=${post.id}">${post.title}</a></h5>
+                                <h5 class="mb-3" style="margin-left:5px"><a class="content-title" target="_blank" href="${firstUrl}">${post.title}</a></h5>
                             </div>
                         </div>
                     </div>`;
