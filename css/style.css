@@ -69,7 +69,7 @@ p {
   line-height: 30px;
   display: none;
   color: #ffffff;
-  background-color: #ebb884;
+  background-color: #6A5ACD;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   -webkit-box-shadow: 0 0 3px rgba(22, 28, 45, 0.15);
@@ -77,7 +77,7 @@ p {
 }
 
 .back-to-top:hover {
-  background-color: #ebb884;
+  background-color: #6A5ACD;
   color: #ffffff;
 }
 
@@ -183,13 +183,13 @@ p {
 }
 
 .title-section .title-sub-heading {
-  color: #ebb884;
+  color: #6A5ACD;
   font-size: 12px !important;
   text-transform: uppercase;
   padding: 7px 30px;
   letter-spacing: 1px;
   border-radius: 30px;
-  border: 1px solid #ebb884;
+  border: 1px solid #6A5ACD;
   display: inline-block;
 }
 
@@ -438,19 +438,19 @@ h6, .fs-6, .h6, .fs-6 {
 }
 
 .bg-primary {
-  background: #ebb884 !important;
+  background: #6A5ACD !important;
 }
 
 .text-primary {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
 }
 
 a.text-gradient-primary:hover, a.text-gradient-primary:focus {
-  background: -webkit-linear-gradient(45deg, #ebb884, #dc3545);
+  background: -webkit-linear-gradient(45deg, #6A5ACD, #dc3545);
 }
 
 .bg-secondary {
@@ -689,7 +689,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 /*          components            */
 /**********************************/
 .btn-primary {
-  background-color: #ebb884;
+  background-color: #6A5ACD;
   color: #ffffff !important;
   -webkit-box-shadow: 0 3px 5px 0 rgba(235, 184, 132, 0.1);
           box-shadow: 0 3px 5px 0 rgba(235, 184, 132, 0.1);
@@ -704,15 +704,15 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 .btn-outline-primary {
   color: #ffffff;
   background-color: transparent;
-  border: 1px solid #ebb884;
+  border: 1px solid #6A5ACD;
 }
 
 .btn-outline-primary:hover, .btn-outline-primary:focus, .btn-outline-primary:active, .btn-outline-primary.active, .btn-outline-primary.focus, .btn-outline-primary:not(:disabled):not(.disabled):active {
-  background-color: #ebb884;
+  background-color: #6A5ACD;
   color: #ffffff;
   -webkit-box-shadow: 0 3px 5px 0 rgba(235, 184, 132, 0.1);
           box-shadow: 0 3px 5px 0 rgba(235, 184, 132, 0.1);
-  border: 1px solid #ebb884;
+  border: 1px solid #6A5ACD;
 }
 
 .btn-secondary {
@@ -1062,14 +1062,14 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .btn.btn-outline-primary {
-  border: 1px solid #ebb884;
+  border: 1px solid #6A5ACD;
   color: #ffffff;
   padding: 15px 35px;
 }
 
 .btn.btn-outline-primary:hover, .btn.btn-outline-primary:focus, .btn.btn-outline-primary.focus, .btn.btn-outline-primary:active, .btn.btn-outline-primary.active {
-  background-color: #ebb884;
-  border: 1px solid #ebb884;
+  background-color: #6A5ACD;
+  border: 1px solid #6A5ACD;
   color: #ffffff !important;
 }
 
@@ -1084,7 +1084,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 .form-control:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  border-color: #ebb884 !important;
+  border-color: #6A5ACD !important;
 }
 
 /************************************/
@@ -1127,7 +1127,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .navbar .navbar-nav .nav-item:hover .nav-link, .navbar .navbar-nav .nav-item.active .nav-link, .navbar .navbar-nav .nav-item.active .nav-link {
-  color: #ebb884;
+  color: #6A5ACD;
 }
 
 .navbar .navbar-toggler {
@@ -1172,7 +1172,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .navbar.nav-sticky .nav-item:hover .nav-link, .navbar.nav-sticky .nav-item.active .nav-link, .navbar.nav-sticky .nav-item:active .nav-link {
-  color: #ebb884;
+  color: #6A5ACD;
 }
 
 .navbar.nav-sticky .menu-social .login-btn-primary {
@@ -1201,7 +1201,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
     font-family: "Sora", sans-serif;
   }
   .navbar.nav-light .navbar-nav .nav-item:hover .nav-link, .navbar.nav-light .navbar-nav .nav-item:active .nav-link, .navbar.nav-light .navbar-nav .nav-item.active .nav-link {
-    color: #ebb884;
+    color: #6A5ACD;
   }
   .navbar.nav-light.nav-sticky {
     background: #ffffff;
@@ -1210,7 +1210,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
     color: #1d1d1d;
   }
   .navbar.nav-light.nav-sticky .nav-item:hover .nav-link, .navbar.nav-light.nav-sticky .nav-item.active .nav-link, .navbar.nav-light.nav-sticky .nav-item:active .nav-link {
-    color: #ebb884;
+    color: #6A5ACD;
   }
 }
 
@@ -1241,7 +1241,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
     margin: 0px 15px;
   }
   .navbar .navbar-nav .nav-item.active .nav-link {
-    color: #ebb884;
+    color: #6A5ACD;
   }
 }
 
@@ -1491,7 +1491,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 .home3-section .punch-line {
   padding: 6px 25px;
   border-radius: 50px;
-  border: 1px solid #ebb884;
+  border: 1px solid #6A5ACD;
 }
 
 .home3-section .demo-3 img {
@@ -1605,7 +1605,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 
 .home5-section .widget-title {
   font-size: 16px !important;
-  color: #ebb884;
+  color: #6A5ACD;
   font-weight: 700 !important;
   line-height: 1.8;
 }
@@ -1744,7 +1744,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
           transform: translateY(-50%) translateX(30%);
   height: 400px;
   width: 400px;
-  background-color: #ebb884;
+  background-color: #6A5ACD;
   border-radius: 50%;
 }
 
@@ -1794,7 +1794,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .about-tab-section .about-tab .about-tab-pills {
-  background-color: #e8bf9659 !important;
+  background-color: #9283ef59 !important;
   gap: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1834,7 +1834,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 
 .about-tab-section .about-tab .about-tab-pills .custom-nav-item .nav-link.active {
   color: #1d1d1d;
-  background-color: #e8bf96;
+  background-color: #9283ef;
 }
 
 .about-tab-section .about-tab .about-tab-content .about-data li {
@@ -1864,12 +1864,12 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .about-tab-section .about-tab .experience-item .expe-year-section i {
-  color: #e8bf96;
+  color: #9283ef;
 }
 
 .about-tab-section .about-tab .experience-item .expe-year {
   font-size: 14px !important;
-  color: #e8bf96;
+  color: #4d40a4;
   font-weight: 400 !important;
 }
 
@@ -1937,7 +1937,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .container-filter li:hover, .container-filter li.active {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
 }
 
 .projects-wrapper .work-container {
@@ -1990,8 +1990,8 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
   left: 0;
   opacity: 0;
   z-index: 1;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-25%, #ebb884), to(#161c2d)) !important;
-  background-image: linear-gradient(#ebb884 -25%, #161c2d) !important;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(-25%, #6A5ACD), to(#161c2d)) !important;
+  background-image: linear-gradient(#6A5ACD -25%, #161c2d) !important;
   -webkit-transition: all 1s;
   transition: all 1s;
   position: absolute;
@@ -2021,7 +2021,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .projects-wrapper .work-container .content .content-title:hover {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
 }
 
 .projects-wrapper .work-container .content .tag {
@@ -2039,7 +2039,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .projects-wrapper .work-container .content .tag:hover {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
 }
 
 .services-section .service-box {
@@ -2070,7 +2070,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
   line-height: 1.8;
   font-size: 14px !important;
   font-weight: 300 !important;
-  color: #696969;
+  color: #000000;
   margin: 0;
 }
 
@@ -2081,7 +2081,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .services-section a:hover {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -2164,8 +2164,8 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .testimonials-slider .btn-swiper:hover {
-  background-color: #ebb884;
-  border: 1px solid #ebb884;
+  background-color: #6A5ACD;
+  border: 1px solid #6A5ACD;
   color: #1d1d1d;
 }
 
@@ -2197,7 +2197,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .blog-section .blog-box .blog-content .read-link a:hover {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -2227,7 +2227,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .blog-card .blog-content .read-link a:hover {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -2251,7 +2251,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .sidebar .widget .blog-list li a:hover {
-  color: #ebb884;
+  color: #6A5ACD;
 }
 
 .sidebar .widget .post-recent {
@@ -2281,7 +2281,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .sidebar .widget .post-recent .post-recent-content a:hover {
-  color: #ebb884;
+  color: #6A5ACD;
 }
 
 .sidebar .widget .post-recent .post-recent-content span {
@@ -2305,7 +2305,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .sidebar .widget .tagcloud > a:hover {
-  background: #ebb884;
+  background: #6A5ACD;
   color: #ffffff;
 }
 
@@ -2329,7 +2329,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ebb884;
+  color: #6A5ACD;
   border-radius: 50px;
 }
 
@@ -2368,7 +2368,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
   line-height: 1.8;
   font-size: 20px !important;
   font-weight: 500 !important;
-  color: #ebb884;
+  color: #6A5ACD;
   margin: 0;
 }
 
@@ -2386,7 +2386,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 }
 
 .footer-section .social-text li a:hover {
-  color: #ebb884 !important;
+  color: #6A5ACD !important;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
@@ -2415,7 +2415,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
 .footer-section .subscribe .form-group .form-control:focus {
   -webkit-box-shadow: none !important;
           box-shadow: none !important;
-  border: 1px solid #ebb884;
+  border: 1px solid #6A5ACD;
 }
 
 .footer-section .subscribe .form-group .form-control::-webkit-input-placeholder {
@@ -2441,7 +2441,7 @@ a.text-gradient-light-100:hover, a.text-gradient-light-100:focus {
   border-radius: 3px;
   top: 6px;
   right: 6px;
-  background: #ebb884;
+  background: #6A5ACD;
   border: 0;
 }
 
