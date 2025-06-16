@@ -23,19 +23,21 @@ function displayPPosts(posts) {
             firstImageUrl = match[1];
         }
         const listItem = document.createElement('div');
-        listItem.classList.add('col-lg-4', 'col-md-6', 'col-12', 'picture-item')
+        listItem.classList.add('col-lg-6', 'col-md-12', 'col-12', 'picture-item')
         listItem.setAttribute('data-bs-target', 'p'+post.id);
         listItem.setAttribute('data-bs-title', post.title);
         listItem.setAttribute('data-bs-image', firstImageUrl);
         listItem.setAttribute('data-bs-description', post.content);
         listItem.innerHTML = `
-                    <div class="work-container position-relative d-block overflow-hidden rounded">
-                        <div class="card-body p-0">
-                            <img src="${firstImageUrl}" class="img-fluid" alt="work-image">
+                    <div class="work-continer position-relative d-block overflow-hidden rounded">
+                        <div class="card-body p-0 text-justify">
+                            <h5 class="mb-3" style="margin-left:5px"><a class="content-title" target="_blank" href="${firstUrl}">${post.title}</a></h5>
+                            ${post.content}
+                            <!-- <img src="${firstImageUrl}" class="img-fluid" alt="work-image"> 
                             
                             <div class="">
                                 <h5 class="mb-3" style="margin-left:5px"><a class="content-title" target="_blank" href="${firstUrl}">${post.title}</a></h5>
-                            </div>
+                            </div>-->
                         </div>
                     </div>`;
         postList.appendChild(listItem);
